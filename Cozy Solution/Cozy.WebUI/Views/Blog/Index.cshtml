@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <!-- slider-area-start -->
+    <section class="slider-area-blog">
+        <div class="single-page page-height-blog d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex
+                align-items-center justify-content-center">
+                        <div class="page-title text-center">
+                            <h2 class="text-capitalize text-white mb-25 pt-35">Blog</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item">
+                                        <a class="secondary-color" href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active text-capitalize
+                        text-white">
+                                        Blog
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-area-end=  -->
+
+    <section class="blog-full-width-area pt-110 pl-15 pr-15">
+        <div class="container-wrapper">
+            <div class="row">
+                <partial name="_PostBody" model="@Model" />
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+@section addjs{
+
+    <script>
+        function goPage (pageIndex, pageSize){
+
+            $.ajax({
+                url: `@Url.Action("Index")?pageIndex=${pageIndex}&pageSize=${pageSize}`,
+                method:'GET',
+                success:function(response){
+                    $('#dynamic-content').html(response);
+                    location.hash = '#dynamic-content';
+                     location.hash = '';
+                },
+                error: function (response) {
+                    console.log(response)
+                }
+            });
+        }
+    </script>
+}

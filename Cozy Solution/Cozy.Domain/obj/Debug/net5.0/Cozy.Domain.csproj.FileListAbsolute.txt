@@ -1,0 +1,15 @@
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.deps.json
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.runtimeconfig.json
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.runtimeconfig.dev.json
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.dll
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\ref\Cozy.Domain.dll
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.pdb
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.csproj.AssemblyReference.cache
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.AssemblyInfoInputs.cache
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.AssemblyInfo.cs
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.csproj.CoreCompileInputs.cache
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.dll
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\ref\Cozy.Domain.dll
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.pdb
+D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.genruntimeconfig.cache
