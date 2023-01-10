@@ -42,6 +42,7 @@ namespace Cozy.WebUI
             });
 
             services.AddSingleton<EmailService>();
+            services.AddSingleton<CryptoService>();
 
 
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();

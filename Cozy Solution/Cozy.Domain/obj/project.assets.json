@@ -8465,11 +8465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
       "projectName": "Cozy.Domain",
-      "projectPath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
+      "projectPath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
       "packagesPath": "C:\\Users\\seyfi\\.nuget\\packages\\",
-      "outputPath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\obj\\",
+      "outputPath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,10 +1,45 @@
 ﻿<form class="footer__form" method="post"
       asp-controller="Home"
       asp-action="Subscribe"
-      id="frmSubscribe">
+      id="newsletter-subscribe">
     <input class="footer__form__input"
            type="text"
            name="email" id="email"
            placeholder="Subscribe to our newsletter...">
     <button class="footer__form__btn" type="submit">Send</button>
 </form>
+
+@section addjs{ 
+
+    <script>
+        $(document).ready(function (){
+            $("#newsletter-subscribe").submit(function (e) {
+                e.preventDefault();
+
+                let formData = new FormData(e.currentTarget);
+
+                $.ajax({
+                    url: '@Url.Action("Subscribe","Home")',
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response){
+
+                        if(response.error == false){
+                            toastr["success"](response.message, "Uğur")
+                        }
+
+                        e.currentTarget.reset();
+                    },
+                    error: function (response){
+
+                        if(response.error == true){
+                            toastr["error"](response.message, "Xəta");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

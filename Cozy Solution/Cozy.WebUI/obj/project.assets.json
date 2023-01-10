@@ -9802,11 +9802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.WebUI\\Cozy.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.WebUI\\Cozy.WebUI.csproj",
       "projectName": "Cozy.WebUI",
-      "projectPath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.WebUI\\Cozy.WebUI.csproj",
+      "projectPath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.WebUI\\Cozy.WebUI.csproj",
       "packagesPath": "C:\\Users\\seyfi\\.nuget\\packages\\",
-      "outputPath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9827,8 +9827,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj": {
-              "projectPath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj"
+            "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj": {
+              "projectPath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj"
             }
           }
         }

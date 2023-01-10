@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lrSDb+zvKnAhT2YUE4KR7vcUcP3H6qLgoopodTP7EY+/AY9S7cWdDtghClVFbR1m/oSj04qrtDnT1e6hqjXNlw==",
+  "dgSpecHash": "JP7uFQyzci6n6UuM2vJDDeOo6f4uWo+/+32jD35jOH0fQzTmoVurhGL8Q7c9LTh/EibNQp2Kui1jh1kwpKUNEw==",
   "success": true,
-  "projectFilePath": "D:\\Academy p513\\FinalProject\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
+  "projectFilePath": "C:\\Users\\seyfi\\OneDrive\\Masaüstü\\CozyFinal\\Cozy Solution\\Cozy.Domain\\Cozy.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seyfi\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\seyfi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

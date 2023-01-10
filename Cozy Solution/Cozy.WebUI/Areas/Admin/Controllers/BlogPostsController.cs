@@ -3,6 +3,7 @@ using Cozy.Domain.Models.DataContexts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,7 +24,7 @@ namespace Cozy.WebUI.Areas.Admin.Controllers
         }
 
         // GET: Admin/BlogPosts
-        public async Task<IActionResult> Index(BlogPostGetAllQuery query)
+        public async Task<IActionResult> Index(BlogPostGetAllQueryAdmin query)
         {
             var response = await mediator.Send(query);
 
@@ -77,26 +78,42 @@ namespace Cozy.WebUI.Areas.Admin.Controllers
             }
 
 
-
+            ViewBag.CategoryId = new SelectList(db.Categories.Where(c => c.DeletedDate == null).ToList(), "Id", "Name", command.CategoryId);
+            ViewBag.Tags = new SelectList(db.Tags.Where(p => p.DeletedDate == null).ToList(), "Id", "Text");
             return View(command);
         }
 
         // GET: Admin/BlogPosts/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id, BlogPostEditCommand command)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var blogPost = await db.BlogPosts.FindAsync(id);
-            if (blogPost == null)
+            var entity = await db.BlogPosts
+                .Include(bp => bp.TagCloud)
+                .FirstOrDefaultAsync(bp => bp.Id == id);
+            if (entity == null)
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(db.Categories, "Id", "Name", blogPost.CategoryId);
-            return View(blogPost);
+
+            ViewBag.CategoryId = new SelectList(db.Categories.ToList(), "Id", "Name", entity.CategoryId);
+            ViewBag.Tags = new SelectList(db.Tags.Where(p => p.DeletedDate == null).ToList(), "Id", "Text");
+
+
+            command.Id = entity.Id;
+            command.Title = entity.Title;
+            command.Body = entity.Body;
+            command.ImagePath = entity.ImagePath;
+            command.CategoryId = entity.CategoryId;
+            command.TagIds = entity.TagCloud.Select(tc => tc.TagId).ToArray();
+
+
+            return View(command);
         }
+ 
 
 
         [HttpPost]

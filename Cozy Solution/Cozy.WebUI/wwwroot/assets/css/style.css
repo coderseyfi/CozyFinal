@@ -5701,3 +5701,28 @@ h6 {
     .question div {
         line-height: 1.5;
     }
+
+
+.blog-right-sidebar-left-content p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+   
+}
+
+
+
+.read-more {
+    padding: 20px 0px;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 0;
+    color: #000;
+    background: #fff;
+    outline: 0 none;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border: 1px solid #222;
+    color: #fff;
+    background-color: #000;
+}

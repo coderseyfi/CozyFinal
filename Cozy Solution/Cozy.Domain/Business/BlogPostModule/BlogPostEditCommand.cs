@@ -45,8 +45,8 @@ namespace Cozy.Domain.Business.BlogPostModule
             {
                 var entity = await db.BlogPosts
                        .Include(bp => bp.TagCloud)
-                       .FirstOrDefaultAsync(bp => bp.Id == request.Id && bp.DeletedDate == null)
-                      ;
+                       .FirstOrDefaultAsync(bp => bp.Id == request.Id && bp.DeletedDate == null);
+
                 if (entity == null)
                 {
                     return null;

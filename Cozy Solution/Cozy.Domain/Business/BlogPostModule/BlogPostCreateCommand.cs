@@ -13,13 +13,19 @@ using System.Threading.Tasks;
 
 namespace Cozy.Domain.Business.BlogPostModule
 {
+
     public class BlogPostCreateCommand : IRequest<JsonResponse>
     {
         public string Title { get; set; }
+
         public string Body { get; set; }
-        public IFormFile Image { get; set; }
+
         public string ImagePath { get; set; }
+
         public int CategoryId { get; set; }
+
+        public IFormFile Image { get; set; }
+
         public int[] TagIds { get; set; }
 
         public class BlogPostCreateCommandHandler : IRequestHandler<BlogPostCreateCommand, JsonResponse>
@@ -32,25 +38,25 @@ namespace Cozy.Domain.Business.BlogPostModule
                 this.db = db;
                 this.env = env;
             }
+
             public async Task<JsonResponse> Handle(BlogPostCreateCommand request, CancellationToken cancellationToken)
             {
                 var entity = new BlogPost();
-
-                entity.Title = request.Title;
-                entity.Body = request.Body;
-                entity.Slug = entity.Title.ToSlug();
-                entity.CategoryId = request.CategoryId;
                 entity.TagCloud = new List<BlogPostTagItem>();
+
+                entity.Body = request.Body;
+                entity.Title = request.Title;
+                entity.CategoryId = request.CategoryId;
 
                 if (request.Image == null)
                     goto end;
 
-                string extension = Path.GetExtension(request.Image.FileName);
+                string extexsion = Path.GetExtension(request.Image.FileName); //.jpg, png 
 
-                request.ImagePath = $"blogpost-{Guid.NewGuid().ToString().ToLower()}{extension}";
-
+                request.ImagePath = $"blogpost-{Guid.NewGuid().ToString().ToLower()}{extexsion}";
 
                 string fullPath = env.GetImagePhysicalPath(request.ImagePath);
+
 
                 using (var fs = new FileStream(fullPath, FileMode.Create, FileAccess.Write))
                 {
@@ -60,6 +66,22 @@ namespace Cozy.Domain.Business.BlogPostModule
                 entity.ImagePath = request.ImagePath;
 
             end:
+
+                entity.Slug = request.Title.ToSlug();
+
+                if (request.TagIds != null)
+                {
+                    foreach (var exceptedId in request.TagIds)
+                    {
+                        var tagItem = new BlogPostTagItem();
+
+                        tagItem.TagId = exceptedId;
+                        entity.TagCloud.Add(tagItem);
+                    }
+
+                }
+
+
                 await db.BlogPosts.AddAsync(entity, cancellationToken);
                 await db.SaveChangesAsync(cancellationToken);
 
@@ -68,9 +90,9 @@ namespace Cozy.Domain.Business.BlogPostModule
                     Error = false,
                     Message = "Success"
                 };
-
-
             }
+
+
         }
     }
 }

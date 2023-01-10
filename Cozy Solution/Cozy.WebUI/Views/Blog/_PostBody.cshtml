@@ -9,16 +9,16 @@
             </div>
             <ul class="blog-tag d-flex">
                 <li>
-                    <a class="blog-tag__link d-inline-block mb-15" href="#">@item.TagCloud</a>
+                    <a class="blog-tag__link d-inline-block mb-15" href="#"></a>
                 </li>
                 <li>
-                    <a class="blog-tag__link d-inline-block mb-15" href="#">@item.Category?.Name</a>
+                    <a class="blog-tag__link d-inline-block mb-15" href="#"></a>
                 </li>
             </ul>
             <h3 class="blog-head">
                 <a href="blog-details.html">@item.Title</a>
             </h3>
-            <p class="blog-text pt-10 pb-10">
+            <p class="blog-text ellipse">
                 @Html.Raw(item.Body)
             </p>
             <ul class="blog-post-data">
@@ -32,7 +32,7 @@
                     <span><i class="far fa-comment"></i></span><span class="px-1">0</span>Comments
                 </li>
             </ul>
-            <a asp-action="details" asp-route-id="@item.Id" asp-route-slug="@item.Slug" class="btn-1">Read More <i class="fa fa-angle-right"></i></a>
+            @*<a asp-action="details" asp-route-id="@item.Id" asp-route-slug="@item.Slug" class="btn-1 read-more">Read More</a>*@
         </div>
     </div>
 }

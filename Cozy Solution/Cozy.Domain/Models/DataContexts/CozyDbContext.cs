@@ -26,7 +26,7 @@ namespace Cozy.Domain.Models.DataContexts
 
         public DbSet<Faq> Faqs { get; set; }
 
-        //public DbSet<Subscribe> Subscribes { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
 
         public DbSet<Brand> Brands { get; set; }
 

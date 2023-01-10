@@ -13,3 +13,18 @@ D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Dom
 D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\ref\Cozy.Domain.dll
 D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.pdb
 D:\Academy p513\FinalProject\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.genruntimeconfig.cache
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.deps.json
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.runtimeconfig.json
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.runtimeconfig.dev.json
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.dll
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\ref\Cozy.Domain.dll
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\bin\Debug\net5.0\Cozy.Domain.pdb
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.csproj.AssemblyReference.cache
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.AssemblyInfoInputs.cache
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.AssemblyInfo.cs
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.dll
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\ref\Cozy.Domain.dll
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.pdb
+C:\Users\seyfi\OneDrive\Masaüstü\CozyFinal\Cozy Solution\Cozy.Domain\obj\Debug\net5.0\Cozy.Domain.genruntimeconfig.cache
